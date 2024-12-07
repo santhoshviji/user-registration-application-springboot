@@ -94,7 +94,7 @@ public class UserController {
         } catch (IOException e) {
             Map<String, Object> response = new HashMap<>();
             response.put("status", HttpStatus.INTERNAL_SERVER_ERROR.value());
-            response.put("message", "Error registering user: " + e.getMessage());
+            response.put("message", "Error registering on user: " + e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
         }
     }
